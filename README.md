@@ -2,7 +2,7 @@
 
 # Vue-Quiz-App
 
-**_Vue Quiz App Project_**
+**_Vue Quiz App_**
 
 ## Technologies
 
