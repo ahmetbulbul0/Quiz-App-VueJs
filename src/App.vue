@@ -7,30 +7,18 @@
         <span class="score">Score {{ score }}/{{ questions.length }}</span>
       </div>
       <div class="options">
-        <label
-          v-for="(option, index) in getCurrentQuestion.options"
-          :key="index"
-          :class="`option ${
-            getCurrentQuestion.selected == index
-              ? index == getCurrentQuestion.answer
-                ? 'correct'
-                : 'wrong'
-              : ''
-          } ${
-            getCurrentQuestion.selected != null &&
+        <label v-for="(option, index) in getCurrentQuestion.options" :key="index" :class="`option ${getCurrentQuestion.selected == index
+            ? index == getCurrentQuestion.answer
+              ? 'correct'
+              : 'wrong'
+            : ''
+          } ${getCurrentQuestion.selected != null &&
             index != getCurrentQuestion.selected
-              ? 'disabled'
-              : ''
-          }`"
-        >
-          <input
-            type="radio"
-            :name="getCurrentQuestion.index"
-            :value="index"
-            v-model="getCurrentQuestion.selected"
-            :disabled="getCurrentQuestion.selected"
-            @change="SetAnswer"
-          />
+            ? 'disabled'
+            : ''
+          }`">
+          <input type="radio" :name="getCurrentQuestion.index" :value="index" v-model="getCurrentQuestion.selected"
+            :disabled="getCurrentQuestion.selected" @change="SetAnswer" />
           <span>{{ option }}</span>
         </label>
       </div>
@@ -38,8 +26,8 @@
       <button @click="NextQuestion" :disabled="!getCurrentQuestion.selected">
         {{
           getCurrentQuestion.index == questions.length - 1
-            ? "Finish"
-            : getCurrentQuestion.selected == null
+          ? "Finish"
+          : getCurrentQuestion.selected == null
             ? "Select An Option"
             : "Next Question"
         }}
