@@ -1,38 +1,36 @@
-![vue_quiz_app_1366x768_poster](./git-images/vue_quiz_app_1366x768_poster.png)
+# Quiz-App-VueJs
 
-# Vue-Quiz-App
+An interactive and dynamic quiz application built with Vue.js, designed for engaging learning and testing experiences. This project features a responsive user interface, real-time feedback, customizable question sets, and result tracking. Ideal for educational platforms, training programs, or casual entertainment, it offers seamless performance and easy scalability.
 
-**_Vue Quiz App_**
+## Technologies (languages & frameworks)
 
-## Technologies
+- Html
+- Css
+- JavaScript
+- VueJs
 
--   **Html**
--   **Css**
--   **JavaScript**
--   **Vue**
+## Setup
 
-## Project Setup Process
-
-### Install npm (for npm packages)
+1. Install packages
 
 ```sh
 npm install
 ```
 
-### to run project in development environment
+2. Run Project
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+## Essential Terminal Commands
+
+- Type-Check, Compile and Minify for Production
 
 ```sh
 npm run build
 ```
 
-### Lint with
+## Pages
 
-```sh
-npm run lint
-```
+- Home [localhost:5173/](http://localhost:5173/)
